@@ -27,7 +27,6 @@ urls.each do |url|
 end
 
 restaurant_hash = [Hash[@restaurants.zip(@websites)]]
-puts restaurant_hash
 
 CSV.open('patios.csv', 'w') do |csv|
   csv << restaurant_hash
